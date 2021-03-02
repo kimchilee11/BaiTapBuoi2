@@ -67,6 +67,7 @@ img:hover {
 
 .button {
   background: #960636ab;
+  position: relative;
   width: 80%;
   height: 50px;
   margin: 10px 10%;
@@ -77,8 +78,7 @@ img:hover {
   font-size: 15px;
   text-align: center;
   animation-name: btn;
-  animation-duration: 4s;
-  animation-iteration-count: 4;
+  animation-duration: 2s;
 }
 
 .button:hover {
@@ -90,13 +90,15 @@ img:hover {
     background-color: #960636ab;
   }
   to {
-    background-color: #3a111fc2;
+    background-color: #960636ec;
   }
 }
 
 span {
+  position: absolute;
+  left: 130px;
   text-align: center;
-  margin: -10px auto;
+  margin: -10px;
   font-size: 20px;
 }
 
