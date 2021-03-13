@@ -87,10 +87,10 @@ img:hover {
 
 @keyframes btn {
   from {
-    background-color: #960636ab;
+    background-color: #960636ec;
   }
   to {
-    background-color: #960636ec;
+    background-color: #960636ab;
   }
 }
 
