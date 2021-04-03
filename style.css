@@ -1,12 +1,6 @@
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.google.com/specimen/Quicksand?preview.text_type=custom#standard-styles);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+body,
+html {
+  margin: 0px;
 }
 .container {
   display: flex;
@@ -22,8 +16,6 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-}
-@media all and (max-width: 480px) {
 }
 .avartar-box {
   position: relative;
@@ -62,14 +54,22 @@
   background-color: white;
   padding: 25px;
 }
+.timeline {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 25px;
+}
 .underlined {
   width: 90%;
   height: 1.5px;
   background-color: rgba(0, 0, 0, 0.555);
-  margin: 40px auto;
+  margin: 50px auto;
+  /* margin-top: 50px; */
 }
 .content-part1 {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .img-avar {
   margin: 10px;
@@ -99,9 +99,6 @@
   text-align: center;
   margin: 20px;
 }
-.title-part2 {
-  font-weight: 60;
-}
 .content-btn {
   display: inline;
   margin: 15px;
@@ -119,7 +116,7 @@
   font-weight: 600;
 }
 .part1 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   content: ' ';
   background: rgba(255, 255, 255, 0);
 }
@@ -162,12 +159,19 @@
   font-weight: 800;
   font-size: 14px;
 }
-/* .item {
-  width: 0%;
-} */
 .item {
   width: 80%;
-  transition: 0.2s ease;
+  animation-name: example;
+  animation-duration: 0.9s;
+  transition: all 0.2s;
+}
+@keyframes example {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
 }
 .value-p2 {
   width: 50%;
@@ -229,6 +233,7 @@ ul li .skill_progress {
 
 ul li .skill_per {
   width: 15%;
+  margin: 0px 0px;
 }
 
 ul li .skill_progress span {
@@ -241,9 +246,6 @@ ul li .skill_progress span {
 }
 .hobby-item {
   margin-top: 25px;
-}
-.part6 {
-  margin-top: 50px;
 }
 .timeline-part6 {
   display: flex;
@@ -381,7 +383,7 @@ ul li .skill_progress span {
   height: 90%;
   background: rgba(188, 188, 231, 0.664);
 }
-@media only screen and (min-width: 47em) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -421,5 +423,33 @@ ul li .skill_progress span {
     width: 100%;
     margin: 0px auto;
     padding: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+    line-height: 1.9;
+    padding: 0px;
+    font-size: 14.5px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .avartar-box {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .part2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .part3 {
+    display: flex;
+    flex-direction: column;
   }
 }
