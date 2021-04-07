@@ -124,7 +124,7 @@ function b9(){
 function b10(){
     var num1 = parseInt(document.getElementById("num1").value);
     var num2 = parseInt(document.getElementById("num2").value);
-    var temp =0;
+    let temp =0;
     var chuoi = `Cac so nguyen to trong khoang ${num1} den ${num2} la: `
 
     for(let i=num1+1 ; i < num2; i++)
@@ -132,10 +132,11 @@ function b10(){
         for(let j=2; j< i; j++){
             if(i%j ==0) temp++;
         }
-        if(temp === 0){
+
+        if(temp == 0){
             chuoi += i +'  ';
-            temp =0;
         }
+        temp =0;
     }
     alert(chuoi);
 
