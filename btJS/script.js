@@ -1,8 +1,8 @@
 function b1(){
     var  d = new Date();
-    var m = d.getMonth()+1;
+    var m = d.getMonth() + 1;
     
-    var time =d.getHours()+':'+ d.getMinutes()+ ':' +d.getSeconds()+'\t'+ d.getDate()+ "/"+ m +'/'+ d.getFullYear() ;
+    var time =d.getHours() +':'+ d.getMinutes()+ ':' +d.getSeconds()+'  '+ d.getDate()+ "/"+ m +'/'+ d.getFullYear() ;
     alert(time);
 }
 
@@ -26,11 +26,11 @@ function b3(){
     var num = parseInt(str);
     var state = false;
 
-    function isNumber(str){
+    function isNumber(str) {
         var result = str.match(/[^0-9]/g);
-        if(result) return alert("Day khong phai la 1 chuoi so !!!!!!");
-        else 
-        {
+        if(result) 
+            return alert("Day khong phai la 1 chuoi so !!!!!!");
+        else {
             var item = parseInt(str.split('')[0]);
             str.split('').forEach(element => {
                 if(item <= element ) {
@@ -83,6 +83,7 @@ function b6(){
         var x=0;
         str.split('').forEach((items)=>{
             var count=0;
+
             str.split('').forEach((item)=>{
                 if(items === item) count++;
                 if(x < count) {
