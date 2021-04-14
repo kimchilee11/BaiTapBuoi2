@@ -8,60 +8,53 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
-<body>
+<body >
     <div class="container">
-        <form class="form-horizontal" onsubmit="return validateForm()" method="post" name="login_form"> 
-            <div class="form-group"> 
-                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> <input name="first_name" placeholder="Username" class="form-control" type="text"> 
-                    <div class="dropdown  col-md-5">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="dropdown">
-                        Dropdown button
-                        </button>
-                    </div> 
-                </div>
+        <form class="form-horizontal" method="post" name="inputForm" id="inputForm"> 
+            <div class="input-group"> 
+                <input name="itemName" id="itemName" placeholder="Item Name" class="form-control  col-md-3" type="text"> 
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="category" data-toggle="dropdown" name="category">
+                Category
+                </button>
                 <div style="margin: 10px;">
                     <label for="myfile">Select a file:</label>
                     <input type="file" id="myfile" name="myfile">
-                    <p><img id="output" width="200" /></p>
+                    <p><img id="loadImage" width="200" /></p>
                 </div>
-                <div class="col-md-12"> 
-                    <button type="submit" class="btn btn-md btn-danger pull-right">Đăng nhập </button> 
-                </div> 
+            </div>
+            <div class="col-md-12"> 
+                    <button id="btnSubmit" type="submit" class="btn btn-md btn-secondary pull-right">Đăng nhập </button> 
             </div> 
-
         </form> 
-        
-          <table class="table table-dark">
+<div id="msg">
+  <pre></pre>
+</div>
+          <table class="table table-dark" id="table">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Image</th>
+                <th scope="col">Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody">
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <th scope="row" id="stt"></th>
+                <td id="showItem"></td>
+                <td id="showCategory"></td>
+                <td id="">
+                  <img width="100" id="showImg">
+                </td>
+                <td>
+                  <button id="edit" type="submit" class="btn btn-md btn-secondary pull-right">Edit </button> 
+                  <button id="remove" type="submit" class="btn btn-md btn-secondary pull-right">Delete </button> 
+                </td>
               </tr>
             </tbody>
           </table>
     </div>
-    <script src="./scripts.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
