@@ -86,7 +86,7 @@ function editItem(x) {
     let name=document.getElementById(`itemName${x}`);
     name.innerHTML=`<input type='text' id="itemNameNew${x}" value="">`;
     let itemNameEdit = name.innerHTML;
-    table.rows[j].cells[1].jinnerHTML = itemNameEdit;
+    table.rows[j].cells[1].innerHTML = itemNameEdit;
 
     let btnC = document.getElementById(`btnD${x}`);
     btnC.innerHTML= `<td id="btnCancel${x}"><button onclick="Cancel(${x}, ${document})">Cancel</button></td>`;
