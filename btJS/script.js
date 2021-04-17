@@ -186,3 +186,34 @@ function b8(){
             alert("Unvailable !!!!!")
     }
 }
+
+// console.log(data[2]);
+// if(data!=null)
+//  {
+//     console.log(data);
+//     for(let j=0 ; j < data.length ; j++) {
+//         let r1 = document.createElement("tr");
+
+//         let c1 = document.createElement("td");
+//         c1.innerHTML = j;
+//         let c2 = document.createElement("td");
+//         c2.innerHTML = data[j].itemName;
+        
+//         let res = data[j].image;
+//         var image = new Image();
+//         image.src = res;
+//         let c4 = document.createElement("img");
+//         c4.width = "10";
+//         c4.src = res;
+    
+//         r1.appendChild(c1);
+//         r1.appendChild(c2);
+//         r1.appendChild(image);
+    
+//         let body = document.getElementById("tbody");
+//         body.appendChild(r1);
+//     }
+//     i= data.length
+//     array  = data;
+// }
+// array = data

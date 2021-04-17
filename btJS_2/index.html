@@ -13,14 +13,22 @@
         <form class="form-horizontal" method="post" name="inputForm" id="inputForm"> 
             <div class="input-group"> 
                 <input name="itemName" id="itemName" placeholder="Item Name" class="form-control  col-md-3" type="text"> 
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="category" data-toggle="dropdown" name="category">
-                Category
-                </button>
+                <select class="custom-select mr-sm-2" id="category">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
                 <div style="margin: 10px;">
                     <label for="myfile">Select a file:</label>
                     <input type="file" id="myfile" name="myfile">
-                    <p><img id="loadImage" width="200" /></p>
+                    <p><img id="loadImage" style="width: 130px;" /></p>
                 </div>
+            </div>
+            <div>
+              <p id="nameWarning" class="col-md-3" style="display: inline; color: red;"></p>
+              <p id="cateWarning" class="mr-sm-2" style="display: inline; color: red;"></p>
+              <p id="imgWarning"></p>
             </div>
             <div class="col-md-12"> 
                     <button id="btnSubmit" type="submit" class="btn btn-md btn-secondary pull-right">Đăng nhập </button> 
@@ -48,8 +56,8 @@
                   <img width="100" id="showImg">
                 </td>
                 <td>
-                  <button id="edit" type="submit" class="btn btn-md btn-secondary pull-right">Edit </button> 
-                  <button id="remove" type="submit" class="btn btn-md btn-secondary pull-right">Delete </button> 
+                  <!-- <button id="edit" type="submit" class="btn btn-md btn-secondary pull-right">Edit </button> 
+                  <button id="remove" type="submit" class="btn btn-md btn-secondary pull-right">Delete </button>  -->
                 </td>
               </tr>
             </tbody>
